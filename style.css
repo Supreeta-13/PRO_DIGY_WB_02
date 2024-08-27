@@ -1,0 +1,97 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    margin-top: 100vh;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    min-width: 580px;
+    position: relative;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.334);
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.stopwatch {
+    position: relative;
+    width: 78%;
+    left: 4%;
+    padding: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(210, 186, 240, 0.25);
+}
+
+.time {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button#startStop {
+    background-color: #28a745;
+    color: rgb(255, 249, 246);
+}
+
+button#startStop.stop {
+    background-color: #dc3545;
+}
+
+button#lap {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+}
+
+button#reset {
+    background-color: #6c757d;
+    color: rgb(255, 249, 246);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.laps {
+    list-style: none;
+    padding: 20px;
+}
+
+.laps li {
+    background: #b1b0ac;
+    border: 1px solid #000000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
